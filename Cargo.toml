@@ -1,0 +1,33 @@
+[package]
+name = "antcolony-consensus"
+version = "0.1.0"
+edition = "2021"
+authors = ["AntColony Consensus Team"]
+description = "Blockchain-less distributed consensus system inspired by ant colony algorithms"
+license = "MIT"
+
+[dependencies]
+tokio = { version = "1.35", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+prost = "0.12"
+ring = "0.17"
+rand = "0.8"
+async-trait = "0.1"
+thiserror = "1.0"
+clap = { version = "4.4", features = ["derive"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+bytes = "1.5"
+uuid = { version = "1.6", features = ["v4"] }
+chrono = "0.4"
+
+[dev-dependencies]
+criterion = "0.5"
+tokio-test = "0.4"
+mockall = "0.12"
+
+[[bench]]
+name = "consensus_bench"
+harness = false
+

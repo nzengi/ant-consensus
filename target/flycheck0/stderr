@@ -1,0 +1,4 @@
+error: failed to parse manifest at `/Users/zengi/Desktop/metamask/Cargo.toml`
+
+Caused by:
+  can't find `consensus_bench` bench at `benches/consensus_bench.rs` or `benches/consensus_bench/main.rs`. Please specify bench.path if you want to use a non-default path.
